@@ -7,4 +7,23 @@
         <p class="lead">Know more about the seven municipalities of District 3 in Laguna</p>
     </div>
 </div>
+<table class="table">
+    <thead>
+       <tr>
+          <th>Name</th>
+          <th>picture</th>
+          <th>description</th>
+       </tr>
+    </thead>
+ 
+    <tbody>
+       {% for row in rows %}
+       <tr>
+          <td>{{ row[1] }}</td>
+          <td>{{ row[2] }}</td>
+          <td>{{ row[3] }}</td>
+       </tr>
+       {% endfor %}
+    </tbody>
+ </table>
 {% endblock %}
